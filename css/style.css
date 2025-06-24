@@ -67,20 +67,22 @@ button {
 .menu {
   width: 100%;
   min-width: 375px;
-  height: 440px;
-  margin: 57px auto;
+  max-height: 440px;
+  margin: 57px auto 0 0;
   background-color: #FFFFFF;
   padding-top: 48px;
+  padding-bottom: 68px;
   display: flex;
   flex-direction: column;
   gap: 24.92px;
 }
 .menu h2 {
-  width: 100%;
-  max-width: 275px;
-  padding: 0 20px;
-  margin: 0;
-  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.menu .box-h2 {
+  width: 322.49px;
+  margin: 0 auto;
 }
 .menu .btn-menu {
   width: 322.49px;
@@ -95,7 +97,59 @@ button {
   font-size: 1rem;
   color: #000000;
   font-weight: 500;
+  text-decoration: none;
+}
+.menu .fa-mobile-screen-button {
+  font-size: 19px;
+  margin: 24.54px 27px 0 33.47px;
+  color: #7E7E7E;
+}
+.menu .step1 {
+  position: absolute;
+  top: 531.86px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu .step2 {
+  position: absolute;
+  top: 629.17px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .step3 {
+  position: absolute;
+  top: 726.48px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .fa-list-ul {
+  font-size: 17px;
+  margin: 27.91px 23px 0 34.49px;
+  color: #7E7E7E;
+}
+.menu .fa-store {
+  font-size: 18px;
+  margin: 26.67px 20px 0 35.49px;
+  color: #9356DC;
 }/*# sourceMappingURL=style.css.map */
