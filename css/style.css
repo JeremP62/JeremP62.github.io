@@ -1,6 +1,8 @@
 body {
+  width: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
+  margin: 0;
 }
 
 .header {
@@ -65,28 +67,24 @@ button {
 }
 
 .menu {
-  width: 100%;
-  min-width: 375px;
-  max-height: 440px;
-  margin: 57px auto 54px 0;
+  margin: 57px 0 54px 0;
   background-color: #FFFFFF;
-  padding-top: 48px;
-  padding-bottom: 68px;
+  padding: 48px 20px 68px 20px;
   display: flex;
   flex-direction: column;
   gap: 24.92px;
 }
 .menu .box-h2 {
   width: 322.49px;
-  margin: 0 auto;
+  margin: 0;
 }
 .menu .btn-menu {
-  width: 322.49px;
+  width: 100%;
   height: 72.38px;
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  margin: 0 auto;
+  margin: 0;
   position: relative;
 }
 .menu a {
@@ -156,23 +154,23 @@ button {
 
 .title-restaurants {
   width: 345px;
-  margin: 0 auto;
+  margin: 0;
 }
 .title-restaurants .box-h2-2 {
   height: 100%;
-  margin: 54px 0 20px 0px;
+  margin: 54px 0 20px 17px;
 }
 
 .box-restau {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding-bottom: 66px;
+  padding: 0 18px 66px 17px;
 }
 .box-restau .card-container {
-  width: 340px;
+  width: 100%;
   height: 251px;
-  margin: 0 auto;
+  margin: 0;
 }
 .box-restau .card-container .card {
   display: block;
@@ -183,6 +181,7 @@ button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   background: white;
+  position: relative;
 }
 .box-restau .card-container .card img {
   width: 100%;
@@ -190,17 +189,31 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  position: relative;
+}
+.box-restau .card-container .card .box-new {
+  width: 80px;
+  height: 29px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  background-color: #99E2D0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  color: #008766;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box-restau .card-container .card .card-content {
   padding: 10px;
 }
-.box-restau .card-container .card .card-content h3 {
+.box-restau .card-container .card h3 {
   margin: 0 0 0 13px;
   font-size: 1.125rem;
   color: #000000;
   font-weight: 700;
 }
-.box-restau .card-container .card .card-content p {
+.box-restau .card-container .card p {
   margin: 5px 0 0 13px;
   font-size: 1.0625rem;
   color: #000000;
@@ -208,12 +221,13 @@ button {
 }
 
 .box-footer {
-  width: 375px;
   height: 186px;
   background-color: #353535;
   padding: 22px 0 0 25px;
+  margin: 0 auto;
 }
 .box-footer .titre-footer {
+  width: 137.58px;
   font-size: 1.125rem;
   color: #FFFFFF;
   font-family: "Shrikhand";
