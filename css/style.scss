@@ -34,7 +34,18 @@ body {
 
         .fa-map-marker-alt {
             margin-right:17px;
-        }   
+            
+        } 
+        .s2 {
+          width: 109px;
+          color: #000000;
+          margin: 0;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          white-space: nowrap;
+          
+        }  
     }
 h1 {
     width: 275px;
@@ -197,7 +208,7 @@ button {
          .icon-solid {
            font-size: 22px;
            position: absolute;
-           transition: opacity 0.3s;     
+           transition: opacity 1.9s;     
         }
           .icon-regular {
            color: black;
@@ -212,7 +223,7 @@ button {
            opacity: 1;
           }
           input:checked ~ .icon-regular {
-           opacity: 0;
+           opacity: 1;
           }
         }
       .card-content {
@@ -230,8 +241,11 @@ button {
           width: 267px;
           margin: 5px 0 0 13px;
           font-size: 1.0625rem;
-          color: #000000;
+          color: White;
           font-weight: 300;
+        }
+        .s1  {
+          color: #000000;
         }
 
 .box-footer {
