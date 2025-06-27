@@ -143,14 +143,13 @@ button {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  
   padding: 0 18px 66px 17px ;
 
   .card-container {
     width: 100%;
     height: 251px;
     margin: 0;
-     
+  }  
 
     .card {
       display: block;
@@ -162,15 +161,14 @@ button {
       text-decoration: none;
       background: white;
       position: relative;
-      
+    }  
 
       img {
         width: 100%;
         height: 170px;
         object-fit: cover;
         display: block;
-        position: relative;
-         
+        position: relative;   
       }
       .box-new{
         width: 80px;
@@ -183,13 +181,45 @@ button {
         color: #008766;
         display: flex;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;  
       }
+      .heart-toggle {
+        position: absolute;
+        top: 197px;
+        right: 40px;
+        font-size: 22px;
+        cursor: pointer;
+      }
+        input {
+          display: none;
+        }
+         .icon-regular,
+         .icon-solid {
+           font-size: 22px;
+           position: absolute;
+           transition: opacity 0.3s;     
+        }
+          .icon-regular {
+           color: black;
+          }
+          .icon-solid {
+           background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           opacity: 0;
+          }
+          input:checked ~ .icon-solid {
+           opacity: 1;
+          }
+          input:checked ~ .icon-regular {
+           opacity: 0;
+          }
+        }
       .card-content {
         padding: 10px;
       }
         h3 {
+          width: 267px;
           margin: 0 0 0 13px;
           font-size: 1.125rem;
           color: #000000;
@@ -197,14 +227,12 @@ button {
         }
 
         p {
+          width: 267px;
           margin: 5px 0 0 13px;
           font-size: 1.0625rem;
           color: #000000;
           font-weight: 300;
         }
-      }
-    }
-  }
 
 .box-footer {
   height: 186px;

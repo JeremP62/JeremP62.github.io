@@ -172,7 +172,7 @@ button {
   height: 251px;
   margin: 0;
 }
-.box-restau .card-container .card {
+.box-restau .card {
   display: block;
   width: 100%;
   height: 100%;
@@ -183,7 +183,7 @@ button {
   background: white;
   position: relative;
 }
-.box-restau .card-container .card img {
+.box-restau img {
   width: 100%;
   height: 170px;
   -o-object-fit: cover;
@@ -191,7 +191,7 @@ button {
   display: block;
   position: relative;
 }
-.box-restau .card-container .card .box-new {
+.box-restau .box-new {
   width: 80px;
   height: 29px;
   position: absolute;
@@ -204,16 +204,52 @@ button {
   align-items: center;
   justify-content: center;
 }
-.box-restau .card-container .card .card-content {
+.box-restau .heart-toggle {
+  position: absolute;
+  top: 197px;
+  right: 40px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.box-restau input {
+  display: none;
+}
+.box-restau .icon-regular,
+.box-restau .icon-solid {
+  font-size: 22px;
+  position: absolute;
+  transition: opacity 0.3s;
+}
+.box-restau .icon-regular {
+  color: black;
+}
+.box-restau .icon-solid {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.box-restau input:checked ~ .icon-solid {
+  opacity: 1;
+}
+.box-restau input:checked ~ .icon-regular {
+  opacity: 0;
+}
+
+.card-content {
   padding: 10px;
 }
-.box-restau .card-container .card h3 {
+
+h3 {
+  width: 267px;
   margin: 0 0 0 13px;
   font-size: 1.125rem;
   color: #000000;
   font-weight: 700;
 }
-.box-restau .card-container .card p {
+
+p {
+  width: 267px;
   margin: 5px 0 0 13px;
   font-size: 1.0625rem;
   color: #000000;
