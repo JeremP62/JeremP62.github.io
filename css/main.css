@@ -1,0 +1,304 @@
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
+  margin: 0;
+}
+
+h1 {
+  width: 275px;
+  height: 68px;
+  font-size: 1.5rem;
+  margin: 39px auto 0;
+  text-align: center;
+}
+
+.soustitre {
+  width: 315px;
+  margin: 0 auto;
+  height: 46px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  display: flex;
+  text-align: center;
+  color: #353535;
+}
+
+.header {
+  width: 100%;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.header .logo-ohmyfood {
+  height: 44px;
+}
+
+.location {
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.location .fa-map-marker-alt {
+  margin-right: 17px;
+}
+.location .s2 {
+  width: 109px;
+  color: #000000;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  white-space: nowrap;
+}
+
+button {
+  width: 218px;
+  height: 50px;
+  display: block;
+  margin: 27px auto 0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu {
+  margin: 57px 0 54px 0;
+  background-color: #FFFFFF;
+  padding: 48px 20px 68px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24.92px;
+}
+.menu .box-h2 {
+  width: 322.49px;
+  margin: 0;
+}
+.menu .btn-menu {
+  width: 100%;
+  height: 72.38px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  margin: 0;
+  position: relative;
+}
+.menu .btn-menu a {
+  height: 100%;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+}
+.menu .btn-menu .fa-mobile-screen-button {
+  font-size: 19px;
+  margin: 24.54px 27px 0 33.47px;
+  color: #7E7E7E;
+}
+.menu .btn-menu .step1 {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+.menu .btn-menu .step2 {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+.menu .btn-menu .step3 {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+.menu .btn-menu .fa-list-ul {
+  font-size: 17px;
+  margin: 27.91px 23px 0 34.49px;
+  color: #7E7E7E;
+}
+.menu .btn-menu .fa-store {
+  font-size: 18px;
+  margin: 26.67px 20px 0 35.49px;
+  color: #9356DC;
+}
+
+.title-restaurants {
+  width: 345px;
+  margin: 0;
+}
+.title-restaurants .box-h2-2 {
+  height: 100%;
+  margin: 54px 0 20px 17px;
+}
+
+.box-restau {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 18px 66px 17px;
+}
+.box-restau .card-container {
+  width: 100%;
+  height: 251px;
+  margin: 0;
+}
+.box-restau .card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  background: white;
+  position: relative;
+}
+.box-restau .card img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  position: relative;
+}
+.box-restau .card .box-new {
+  width: 80px;
+  height: 29px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  background-color: #99E2D0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  color: #008766;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-restau .card .heart-toggle {
+  position: absolute;
+  top: 197px;
+  right: 40px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.box-restau .card input {
+  display: none;
+}
+.box-restau .card .icon-regular,
+.box-restau .card .icon-solid {
+  font-size: 22px;
+  position: absolute;
+  transition: opacity 1.9s;
+}
+.box-restau .card .icon-regular {
+  color: black;
+}
+.box-restau .card .icon-solid {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.box-restau .card input:checked ~ .icon-solid {
+  opacity: 1;
+}
+.box-restau .card input:checked ~ .icon-regular {
+  opacity: 0;
+}
+.box-restau .card-content {
+  padding: 10px;
+}
+.box-restau .card-content h3 {
+  width: 267px;
+  margin: 0 0 0 13px;
+  font-size: 1.125rem;
+  color: #000000;
+  font-weight: 700;
+}
+.box-restau .card-content p {
+  width: 267px;
+  margin: 5px 0 0 13px;
+  font-size: 1.0625rem;
+  color: white;
+  font-weight: 300;
+}
+.box-restau .card-content .s1 {
+  color: #000000;
+}
+
+.box-footer {
+  height: 186px;
+  background-color: #353535;
+  padding: 22px 0 0 25px;
+  margin: 0 auto;
+}
+.box-footer .titre-footer {
+  width: 137.58px;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 16px 0;
+}
+.box-footer .text-footer {
+  width: 190px;
+  height: 99px;
+  display: flex;
+  flex-direction: column;
+  color: #F6F6F6;
+}
+.box-footer .text-footer p {
+  display: flex;
+  align-items: center;
+  margin: 0 0 7px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.box-footer .text-footer .fa-utensils {
+  font-size: 13px;
+  margin-right: 11px;
+}
+.box-footer .text-footer .fa-handshake-angle {
+  font-size: 10.8px;
+  margin-right: 10.08px;
+}/*# sourceMappingURL=main.css.map */
