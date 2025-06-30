@@ -268,6 +268,7 @@ button {
 }
 .box-restau .card .icon-solid {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -344,6 +345,52 @@ button {
 .container-menu .description-price .price {
   margin: 0 15px 0 0;
   font-weight: 700;
+}
+
+.box-enter::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 11%;
+  margin: 0;
+  background-color: #99E2D0;
+}
+
+.heart-toggle-menu {
+  position: relative;
+  top: -70px;
+  right: -300px;
+  font-size: 22px;
+  cursor: pointer;
+  display: inline-block;
+}
+.heart-toggle-menu input {
+  display: none;
+}
+.heart-toggle-menu .icon-regular,
+.heart-toggle-menu .icon-solid {
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1.9s;
+}
+.heart-toggle-menu .icon-regular {
+  color: black;
+  opacity: 1;
+}
+.heart-toggle-menu .icon-solid {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.heart-toggle-menu input:checked ~ .icon-solid {
+  opacity: 1;
+}
+.heart-toggle-menu input:checked ~ .icon-regular {
+  opacity: 0;
 }
 
 .box-footer {

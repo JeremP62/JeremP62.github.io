@@ -68,6 +68,7 @@
 
     .icon-solid {
       background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       opacity: 0;
@@ -156,4 +157,56 @@
       }
         
     }
+    .box-enter::after {
+         content: "";
+         display: block;
+         height: 3px;
+         width: 11%;
+         margin:0;
+         background-color: #99E2D0; 
+}
+
+.heart-toggle-menu {
+      position: relative;
+      top: -70px;
+      right: -300px;
+      font-size: 22px;
+      cursor: pointer;
+      display: inline-block;
+
+      input {
+      display: none;
+  }
+
+  .icon-regular,
+  .icon-solid {
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1.9s;
+  }
+
+  .icon-regular {
+    color: black;
+    opacity: 1;
+  }
+
+  .icon-solid {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+
+  input:checked ~ .icon-solid {
+    opacity: 1;
+  }
+
+  input:checked ~ .icon-regular {
+    opacity: 0;
+  }
+}
+
 
