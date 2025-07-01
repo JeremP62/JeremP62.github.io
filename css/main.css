@@ -84,6 +84,10 @@ button {
   font-size: 1rem;
   font-weight: 500;
 }
+button:hover {
+  filter: brightness(1.25);
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.3764705882);
+}
 
 .btn-command {
   width: 186px;
