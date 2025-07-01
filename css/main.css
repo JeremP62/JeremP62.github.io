@@ -238,6 +238,7 @@ body.fade-body {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 32px 13px 0 13px;
+  position: relative;
 }
 .Menup2 .h1-p2 {
   margin: 0;
