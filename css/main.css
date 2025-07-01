@@ -4,6 +4,7 @@
 
 body {
   max-width: 100vw;
+  height: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
   overflow-x: hidden;
@@ -130,6 +131,10 @@ body.fade-body {
     transform: translateY(-50px);
   }
 }
+.validbar-checkbox {
+  display: none;
+}
+
 .menu {
   margin: 57px 0 54px 0;
   background-color: #FFFFFF;
@@ -229,7 +234,6 @@ body.fade-body {
   width: 100%;
   height: 1035px;
   background-color: #F6F6F6;
-  position: relative;
   top: -32px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -354,6 +358,7 @@ body.fade-body {
 
 .container-menu {
   height: 270px;
+  position: relative;
 }
 .container-menu .card-imgp2 {
   height: 275px;
@@ -370,23 +375,33 @@ body.fade-body {
   border-radius: 15.04px;
   padding: 12px 0 12px 15px;
   margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-.container-menu .title-menu {
+
+.title-menu {
   font-size: 1.125rem;
   margin: 0;
+  overflow: hidden;
 }
-.container-menu .title-l-menu {
+
+.title-l-menu {
   width: 287px;
   margin: 0;
   font-size: 0.94rem;
 }
-.container-menu .description-price {
+
+.description-price {
   height: 19px;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
 }
-.container-menu .description-price .price {
-  margin: 0 15px 0 0;
+.description-price .price {
+  margin: 0 13.5px 0 0;
   font-weight: 700;
 }
 
@@ -434,6 +449,68 @@ body.fade-body {
 }
 .heart-toggle-menu input:checked ~ .icon-regular {
   opacity: 0;
+}
+
+.validation-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  transition: width 0.4s ease;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.validbar-checkbox:checked + .card-p2 .validation-bar {
+  width: 6px;
+}
+
+.card-wrapper {
+  display: block;
+  cursor: pointer;
+}
+.card-wrapper .card-toggle {
+  display: none;
+}
+.card-wrapper .card-toggle:checked + .card-p2 .validation-box {
+  width: 59px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.validation-box {
+  width: 0;
+  height: 69px;
+  background-color: #99E2D0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0;
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.validation-box .fa-circle-check {
+  font-size: 20px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.texte-container {
+  width: 287px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 .box-footer {

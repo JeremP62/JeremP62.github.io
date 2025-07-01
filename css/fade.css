@@ -11,7 +11,7 @@ body {
 
 .logo1 {
   font-family: "Arial", sans-serif;
-  font-size: 148px;
+  font-size: 180px;
   font-weight: bold;
   color: #9356DC;
   display: flex;
@@ -26,7 +26,7 @@ body {
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  text-shadow: 8px 8px 0px rgba(0, 0, 0, 0.7);
+  text-shadow: 8px 8px 0px rgb(0, 0, 0);
 }
 
 @keyframes jump {
