@@ -140,38 +140,43 @@
             cursor: pointer;
             transition: all 0.3s ease;
           transform: translateX(0);
-            
+             min-width: 0;
             display: flex;
             flex-direction: row;
             align-items: center; 
-            justify-content: space-between;
-            
-            
+            justify-content: space-between;    
         }
 }
        
        .title-menu{
+            width: 100%;
             font-size: 1.125rem;
             margin: 0;
             overflow: hidden;
-            
+            white-space: nowrap;  
+            overflow: hidden;   
+            text-overflow: ellipsis;  
+      
        }
        .title-l-menu{
-            width: 287px;
+            width: 100%;
+            min-width: 0; 
             margin: 0;
             font-size: 0.94rem;
-            
+            white-space: nowrap;  
+            overflow: hidden;   
+            text-overflow: ellipsis;  
+                     
        }
        .description-price {
         height: 19px;
         margin: 0;
+        
        
                 .price{
-                  margin: 0 13.5px 0 0;
-                  font-weight: 700;
-                } 
-              
-                
+                  margin: 0 13.5px 0 10px;
+                  font-weight: 700;  
+                }          
       }
         
     
@@ -182,15 +187,16 @@
          width: 11%;
          margin:0;
          background-color: #99E2D0; 
-}
+    }
 
 .heart-toggle-menu {
       position: relative;
-      top: -70px;
+      top: -30px;
       right: -300px;
       font-size: 22px;
       cursor: pointer;
       display: inline-block;
+      
 
       input {
       display: none;
@@ -241,7 +247,7 @@
   .validation-bar {
     width: 6px;
   }
-  }
+}
 
   .card-wrapper {
     display: block;
@@ -291,3 +297,46 @@
       align-items: flex-start;
       overflow: hidden; 
     }
+
+    @media (min-width: 768px) {
+
+      .box-restau {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;  
+  
+       .card-container {
+        flex: 0 0 calc(50% - 9px);
+        }
+    }
+  }
+
+       .card-p2 {
+        width: 100%;
+        max-width: 634px;
+        
+  }
+
+       .Menup2 {
+        width: 100%;
+        max-width: 1055px;
+        margin: 0 auto;
+
+            .h1-p2 {
+              margin: 0 auto;
+            }
+       }
+
+       .card-imgp2 {
+        width: 100%;
+        max-width: 1440px;
+         object-fit: cover;
+       }
+
+       .container-menu {
+         width: 100%;
+         max-width: 634px;
+         margin: 0 auto;
+       }
+
+       

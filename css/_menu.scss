@@ -99,3 +99,35 @@
           margin-bottom: 42px;
          }
 }
+
+@media (min-width: 768px) {
+
+        .menu {
+           flex-direction: row;
+           flex-wrap: wrap;
+           
+        }
+        .box-h2 {
+           flex-basis: 100%;
+           margin: 0;
+           height: 31px;
+        }
+
+        .btn-menu {
+            flex: 1 1 150px;
+            display: flex;
+            text-align: center;
+            padding-right: 8px;
+            white-space: nowrap;
+          
+        }
+        .menu .btn-menu a {
+             font-size: clamp(0.8rem, 0.56vw + 0.56rem, 1.5rem);            
+} 
+        .fa-store,
+        .fa-list-ul,
+        .fa-mobile-screen-button {
+             margin-right: 10px !important;
+    }
+}
+

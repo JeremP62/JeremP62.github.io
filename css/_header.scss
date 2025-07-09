@@ -41,3 +41,17 @@
     white-space: nowrap;
   }
 }
+
+@media (min-width: 768px) {
+
+  h1 {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center; 
+  }
+  .soustitre {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+  }
+}
