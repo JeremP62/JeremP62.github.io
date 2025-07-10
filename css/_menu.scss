@@ -69,10 +69,11 @@
 .title-restaurants {
   width: 345px;
   margin: 0;
+  
 
   .box-h2-2 {
     height: 100%;
-    margin: 54px 0 20px 17px;
+    margin: 54px auto 20px 17px;
   }
 }
 .Menup2 {
@@ -98,30 +99,34 @@
          }
 }
 
-.main-content {
-
-}
 
 @media (min-width: 768px) {
 
         .menu {
-           flex-direction: row;
-           flex-wrap: wrap;
+           display: grid;
+           grid-template-columns: repeat(3, minmax(0, 322px));
+           padding: 48px 20px 68px 20px;
+           gap: 24px;
+           justify-content: center;
            
         }
         .box-h2 {
-           flex-basis: 100%;
-           margin: 0;
-           height: 31px;
+          grid-column: 1 / -1;
+          height: 31px;   
         }
 
-        .btn-menu {
-            flex: 1 1 150px;
+         .box-h2-2 {
+           width: 1028px;
+           height: 28px;
+           margin-bottom: -22px; 
+         }
+
+        .btn-menu { 
+            width: 100%;
+            max-width: 322px;
             display: flex;
             text-align: center;
-            padding-right: 8px;
-            white-space: nowrap;
-          
+            padding-right: 8px;  
         }
         .menu .btn-menu a {
              font-size: clamp(0.8rem, 0.56vw + 0.56rem, 1.5rem);            
@@ -132,4 +137,5 @@
              margin-right: 10px !important;
     }
 }
+
 

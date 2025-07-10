@@ -305,18 +305,32 @@
     @media (min-width: 768px) {
 
       .box-restau {
-        width: 100%;
+        width: 100vw;
         max-width: 1440px;
-        display: flex; 
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        
+        
+        
+        
+      }  
+         
   
        .card-container {
-        flex: 0 0 calc(50% - 9px);
-        }
-    }
-  }
+        max-width: 490px;
+        min-width: 200px;
+        flex: 1 1 45%; 
+        
+        
 
+        
+        }
+    
+  
+  
        .card-p2 {
         width: 100%;
         max-width: 634px;
@@ -349,4 +363,5 @@
         background-color: #FFFFFF;
        }
 
-       
+ 
+      }

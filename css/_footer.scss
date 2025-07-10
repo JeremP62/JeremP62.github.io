@@ -48,47 +48,55 @@
 
 
   .titre-footer {
-    width: 100%;
+    width: 137px;
     height: 27px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 !important;
+    
+    
+    
+    
      
      
      
   }
   .box-footer {
-    padding-right: 20px;
-    width: 100vw; 
-    padding: 0;
+    width: 100%;
+    max-width: 1440px;
+    height: 114px;
     margin: 0;
-   
-    
-    
-  }
-  .text-footer {
     display: flex;
-    flex-direction:row;
+    flex-direction:row-reverse;
     white-space: nowrap;
-    
-    
+    flex-wrap: wrap;
+    padding: 64px 26px 30px 0;
 
-    .box1 {
-      height: 20px;
-         
-    }
+    
+   
+  
+  }
+
+  .text-footer {
+    width: 600px !important; 
+    height: 20px !important;
+    display: flex;
+    flex-direction:row !important;
+    gap: 10px;
+    font-size: 1rem;
+    
+    
 
     .box2 {
-      height: 20px;
-      margin-right: 40px !important;
-       
+      margin-right: 30px !important;
     }
-    .box3 {
-      height: 20px;
-      font-weight: 400 !important;
-    }
+    
+    .box3,
     .box4 {
-      height: 20px;
       font-weight: 400 !important;
-      margin-right: 26px !important;
-      
     }
+
+    
+    
 }
 }
