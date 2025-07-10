@@ -171,11 +171,15 @@
        .description-price {
         height: 19px;
         margin: 0;
+        margin-left: auto;
+        
         
        
                 .price{
                   margin: 0 13.5px 0 10px;
-                  font-weight: 700;  
+                  font-weight: 700;
+                  
+                   
                 }          
       }
         
@@ -301,6 +305,8 @@
     @media (min-width: 768px) {
 
       .box-restau {
+        width: 100%;
+        max-width: 1440px;
         display: flex; 
         flex-direction: row;
         flex-wrap: wrap;  
@@ -337,6 +343,10 @@
          width: 100%;
          max-width: 634px;
          margin: 0 auto;
+       }
+
+       .main-content {
+        background-color: #FFFFFF;
        }
 
        
