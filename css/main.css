@@ -1,5 +1,4 @@
 * {
-  outline: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -31,6 +30,11 @@ h1 {
   color: #353535;
 }
 
+@media (min-width: 768px) {
+  .bodyp1 {
+    background-color: #FFFFFF;
+  }
+}
 .header {
   width: 100%;
   max-width: 1440px;
@@ -250,6 +254,17 @@ body.fade-body {
 
 .Menup2 {
   width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+  top: -32px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 32px 13px 0 13px;
+  position: relative;
+}
+
+.Menup2 {
+  width: 100%;
   height: 1075px;
   background-color: #F6F6F6;
   top: -32px;
@@ -261,13 +276,13 @@ body.fade-body {
 .Menup2 .h1-p2 {
   margin: 0;
   width: 100%;
-  max-width: 341px;
+  max-width: 290px;
   height: 27px;
   display: flex;
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 1.75rem;
-  margin-bottom: 42px;
+  line-height: 1;
 }
 
 @media (min-width: 768px) {
@@ -303,6 +318,17 @@ body.fade-body {
     margin-right: 10px !important;
   }
 }
+.Menup2 {
+  margin-bottom: -32px !important;
+}
+
+.spacer {
+  max-width: 1055px;
+  height: 40px;
+  background-color: #F6F6F6;
+  margin: 0 auto;
+}
+
 .box-restau {
   display: flex;
   flex-direction: column;
@@ -476,10 +502,16 @@ body.fade-body {
   background-color: #99E2D0;
 }
 
+.menu-header {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
 .heart-toggle-menu {
   position: relative;
-  top: -76px;
-  right: -300px;
+  width: 24px;
+  height: 24px;
   font-size: 22px;
   cursor: pointer;
   display: inline-block;
@@ -494,6 +526,8 @@ body.fade-body {
   top: 0;
   left: 0;
   transition: opacity 1.9s;
+  width: 100%;
+  height: 100%;
 }
 .heart-toggle-menu .icon-regular {
   color: black;
@@ -600,11 +634,10 @@ body.fade-body {
     margin: 0 auto;
   }
   .Menup2 .h1-p2 {
-    margin: 0 auto;
-    position: relative;
-    display: inline-block;
+    margin: 0;
     justify-content: center;
     display: flex;
+    text-align: center;
   }
   .card-imgp2 {
     width: 100%;
@@ -621,10 +654,10 @@ body.fade-body {
     background-color: #FFFFFF;
   }
 }
-.heart-toggle-menu {
-  position: absolute;
-  top: 3.5%;
-  left: 64%;
+.menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-footer {
@@ -632,7 +665,7 @@ body.fade-body {
   height: 186px;
   background-color: #353535;
   padding: 22px 0 0 25px;
-  margin: 40px auto 0 0;
+  margin: 0 auto 0 0;
 }
 .box-footer .titre-footer {
   width: 137.58px;

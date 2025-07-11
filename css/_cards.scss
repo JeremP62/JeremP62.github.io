@@ -193,10 +193,16 @@
          background-color: #99E2D0; 
     }
 
+.menu-header {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}    
+
 .heart-toggle-menu {
       position: relative;
-      top: -76px;
-      right: -300px;
+      width: 24px;
+      height: 24px;
       font-size: 22px;
       cursor: pointer;
       display: inline-block;
@@ -213,6 +219,8 @@
     top: 0;
     left: 0;
     transition: opacity 1.9s;
+    width: 100%;
+    height: 100%;
   }
 
   .icon-regular {
@@ -340,13 +348,10 @@
         margin: 0 auto;
 
             .h1-p2 {
-              margin: 0 auto;
-              position: relative;
-              display: inline-block;
+              margin: 0;
               justify-content: center;
               display: flex;
-              
-              
+              text-align: center  
             }
        }
 
@@ -368,11 +373,11 @@
 
  
       }
-
-      .heart-toggle-menu {
-        position: absolute;
-        top: 3.5%;
-        left: 64%;
+      .menu-header {
+         display: flex;
+         justify-content: center;
+         align-items: center;
   
-        
-      }
+}
+
+     
