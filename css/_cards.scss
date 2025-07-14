@@ -3,30 +3,33 @@
   flex-direction: column;
   gap: 18px;
   padding: 0 18px 66px 17px;
+  
 
   .card-container {
     width: 100%;
     height: 251px;
     margin: 0;
-  }
+    position: relative;
+  
 
   .card {
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    overflow: hidden;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     background: white;
-    position: relative;
+    
+    
 
     img {
       width: 100%;
       height: 170px;
       object-fit: cover;
       display: block;
-      position: relative;
+      
     }
 
     .box-new {
@@ -42,14 +45,17 @@
       align-items: center;
       justify-content: center;
     }
-
+  }
+}
     .heart-toggle {
       position: absolute;
       top: 197px;
       right: 40px;
       font-size: 22px;
       cursor: pointer;
-    }
+      z-index: 10;
+      
+    
 
     input {
       display: none;
@@ -82,6 +88,7 @@
       opacity: 0;
     }
   }
+}
 
   .card-content {
     padding: 10px;
@@ -106,7 +113,7 @@
       color: #000000;
     }
   }
-}
+
 
 .card-containerP2 {
    width: 100%;
@@ -323,6 +330,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 50px;
+        
      
       }  
          

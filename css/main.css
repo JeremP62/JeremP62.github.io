@@ -339,27 +339,25 @@ body.fade-body {
   width: 100%;
   height: 251px;
   margin: 0;
+  position: relative;
 }
-.box-restau .card {
+.box-restau .card-container .card {
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   background: white;
-  position: relative;
 }
-.box-restau .card img {
+.box-restau .card-container .card img {
   width: 100%;
   height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  position: relative;
 }
-.box-restau .card .box-new {
+.box-restau .card-container .card .box-new {
   width: 80px;
   height: 29px;
   position: absolute;
@@ -372,56 +370,58 @@ body.fade-body {
   align-items: center;
   justify-content: center;
 }
-.box-restau .card .heart-toggle {
+.box-restau .heart-toggle {
   position: absolute;
   top: 197px;
   right: 40px;
   font-size: 22px;
   cursor: pointer;
+  z-index: 10;
 }
-.box-restau .card input {
+.box-restau .heart-toggle input {
   display: none;
 }
-.box-restau .card .icon-regular,
-.box-restau .card .icon-solid {
+.box-restau .heart-toggle .icon-regular,
+.box-restau .heart-toggle .icon-solid {
   font-size: 22px;
   position: absolute;
   transition: opacity 1.9s;
 }
-.box-restau .card .icon-regular {
+.box-restau .heart-toggle .icon-regular {
   color: black;
 }
-.box-restau .card .icon-solid {
+.box-restau .heart-toggle .icon-solid {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.box-restau .card input:checked ~ .icon-solid {
+.box-restau .heart-toggle input:checked ~ .icon-solid {
   opacity: 1;
 }
-.box-restau .card input:checked ~ .icon-regular {
+.box-restau .heart-toggle input:checked ~ .icon-regular {
   opacity: 0;
 }
-.box-restau .card-content {
+
+.card-content {
   padding: 10px;
 }
-.box-restau .card-content h3 {
+.card-content h3 {
   width: 267px;
   margin: 0 0 0 13px;
   font-size: 1.125rem;
   color: #000000;
   font-weight: 700;
 }
-.box-restau .card-content p {
+.card-content p {
   width: 267px;
   margin: 5px 0 0 13px;
   font-size: 1.0625rem;
   color: white;
   font-weight: 300;
 }
-.box-restau .card-content .s1 {
+.card-content .s1 {
   color: #000000;
 }
 
