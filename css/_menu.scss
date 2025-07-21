@@ -1,5 +1,4 @@
 .menu {
-  max-width: 1440px;
   margin: 57px 0 54px 0;
   background-color: #FFFFFF;
   padding: 48px 20px 68px 20px;
@@ -69,13 +68,13 @@
 .title-restaurants {
   width: 345px;
   margin: 0;
-  
+}
 
   .box-h2-2 {
-    height: 100%;
-    margin: 54px auto 20px 17px;
+    height: 100%; 
+    margin-left: 18px;
   }
-}
+
 
 .Menup2 {
   width: 100%;
@@ -116,8 +115,8 @@
 
         .menu {
            display: grid;
-           grid-template-columns: repeat(3, minmax(0, 322px));
-           padding: 48px 20px 68px 20px;
+           grid-template-columns: repeat(3, 1fr);
+           
            gap: 24px;
            justify-content: center;
            
@@ -128,15 +127,16 @@
         }
 
          .box-h2-2 {
-           width: 1028px;
+           width: auto;
            height: 28px;
-           margin-bottom: -22px; 
+           
+           
          }
 
         .btn-menu { 
             width: 100%;
-            max-width: 322px;
             display: flex;
+            justify-content: center;
             text-align: center;
             padding-right: 8px;  
         }
@@ -156,7 +156,6 @@
 }
 
 .spacer {
-  max-width: 1055px;
   height: 40px;
   background-color: #F6F6F6;
   margin: 0 auto;

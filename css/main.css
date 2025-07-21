@@ -3,13 +3,12 @@
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1440px;
-  height: 100%;
+body, html {
+  width: 100%;
+  height: auto;
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
   margin: 0;
-  padding: 0 1px 0 0;
 }
 
 h1 {
@@ -38,7 +37,6 @@ h1 {
 }
 .header {
   width: 100%;
-  max-width: 1440px;
   height: 63px;
   display: flex;
   justify-content: center;
@@ -53,7 +51,6 @@ h1 {
 }
 
 .location {
-  max-width: 1440px;
   font-family: "Roboto", sans-serif;
   height: 50px;
   font-size: 1rem;
@@ -158,7 +155,6 @@ body.fade-body {
 }
 
 .menu {
-  max-width: 1440px;
   margin: 57px 0 54px 0;
   background-color: #FFFFFF;
   padding: 48px 20px 68px 20px;
@@ -248,9 +244,10 @@ body.fade-body {
   width: 345px;
   margin: 0;
 }
-.title-restaurants .box-h2-2 {
+
+.box-h2-2 {
   height: 100%;
-  margin: 54px auto 20px 17px;
+  margin-left: 18px;
 }
 
 .Menup2 {
@@ -289,8 +286,7 @@ body.fade-body {
 @media (min-width: 768px) {
   .menu {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 322px));
-    padding: 48px 20px 68px 20px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     justify-content: center;
   }
@@ -299,14 +295,13 @@ body.fade-body {
     height: 31px;
   }
   .box-h2-2 {
-    width: 1028px;
+    width: auto;
     height: 28px;
-    margin-bottom: -22px;
   }
   .btn-menu {
     width: 100%;
-    max-width: 322px;
     display: flex;
+    justify-content: center;
     text-align: center;
     padding-right: 8px;
   }
@@ -323,7 +318,6 @@ body.fade-body {
     margin-bottom: -32px !important;
   }
   .spacer {
-    max-width: 1055px;
     height: 40px;
     background-color: #F6F6F6;
     margin: 0 auto;
@@ -618,23 +612,26 @@ body.fade-body {
 }
 
 @media (min-width: 768px) {
-  .box-restau {
-    width: 100vw;
-    max-width: 1440px;
+  .menu-header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+  }
+  .box-restau {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     gap: 50px;
   }
   .card-container {
-    max-width: 490px;
-    min-width: 200px;
-    flex: 1 1 45%;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .card-p2 {
     width: 100%;
-    max-width: 634px;
   }
   .Menup2 {
     width: 100%;
@@ -649,7 +646,6 @@ body.fade-body {
   }
   .card-imgp2 {
     width: 100%;
-    max-width: 1440px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -756,7 +752,6 @@ body.fade-body {
   }
   .box-footer {
     width: 100%;
-    max-width: 1440px;
     height: 114px;
     margin: 0;
     display: flex;

@@ -2,15 +2,13 @@
   box-sizing: border-box;
   
 }
-body {
-  max-width: 1440px;
-  height: 100%;
+body, html {
+  width: 100%;
+  height: auto;
   font-family: 'Roboto', sans-serif;
   background-color: #F6F6F6;
-  
   margin: 0;
-  padding: 0 1px 0 0;
-    
+     
 }
 
 h1 {
