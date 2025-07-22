@@ -9,6 +9,8 @@ body, html {
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
   margin: 0;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox macOS */
 }
 
 h1 {
@@ -30,11 +32,92 @@ h1 {
   color: #353535;
 }
 
+/*anim loader*/
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  animation: hideLoader 1s ease forwards;
+  animation-delay: 1s;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .logo1 {
+  display: flex;
+  gap: 0.2em;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.loader .logo1 span {
+  opacity: 1;
+  display: inline-block;
+  animation: bounce 0.7s ease infinite;
+}
+.loader .logo1 span:nth-child(1) {
+  animation-delay: 0s;
+}
+.loader .logo1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loader .logo1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loader .logo1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loader .logo1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loader .logo1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loader .logo1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.loader .logo1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showMain {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 @media (min-width: 768px) {
-  .bodyp1 {
+  .loader .bodyp1 {
     background-color: #FFFFFF;
   }
 }
+
 .header {
   width: 100%;
   height: 63px;
@@ -658,6 +741,11 @@ body.fade-body {
   }
   .main-content {
     background-color: #FFFFFF;
+    opacity: 0;
+    animation: showMain 1s ease forwards;
+    animation-delay: 3s;
+    position: relative;
+    z-index: 1;
   }
 }
 .menu-header {
@@ -686,15 +774,15 @@ body.fade-body {
 
 /* Délai*/
 .container-menu {
-  animation-delay: 0.5s;
+  animation-delay: 3s;
 }
 
 .container-menu2 {
-  animation-delay: 1s;
+  animation-delay: 3.5s;
 }
 
 .container-menu3 {
-  animation-delay: 1.5s;
+  animation-delay: 4s;
 }
 
 .box-footer {

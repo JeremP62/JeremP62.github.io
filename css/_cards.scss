@@ -377,6 +377,11 @@
 
        .main-content {
         background-color: #FFFFFF;
+        opacity: 0;
+        animation: showMain 1s ease forwards;
+        animation-delay: 3s;
+        position: relative;
+        z-index: 1;
        }
 
  
@@ -411,13 +416,13 @@
 
 /* Délai*/
 .container-menu {
-  animation-delay: 0.5s;
+  animation-delay: 3s;
 }
 .container-menu2 {
-  animation-delay: 1s;
+  animation-delay: 3.5s;
 }
 .container-menu3 {
-  animation-delay: 1.5s;
+  animation-delay: 4s;
 }
 
      
