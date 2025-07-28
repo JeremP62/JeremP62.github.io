@@ -9,8 +9,6 @@ body, html {
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
   margin: 0;
-  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
-  -moz-osx-font-smoothing: grayscale; /* Firefox macOS */
 }
 
 h1 {
