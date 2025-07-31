@@ -385,6 +385,28 @@
         padding-bottom: 32px;
        }
 
+       .main-content-1 {
+
+        background-color: #FFFFFF;
+        opacity: 0;
+        animation: showMain 1s ease forwards;
+        animation-delay: 3s;
+        position: relative;
+        z-index: 1;
+        
+       }
+
+       .main-content-2 {
+        height: 1423px;
+        background-color: #FFFFFF;
+        opacity: 0;
+        animation: showMain 1s ease forwards;
+        animation-delay: 3s;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 32px;
+       }
+
  
       }
       .menu-header {
