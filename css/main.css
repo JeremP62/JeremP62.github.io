@@ -235,6 +235,13 @@ body.fade-body {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .btn-command2 {
+    width: 186px;
+    height: 50px;
+    margin-top: 40px;
+  }
+}
 .menu {
   margin: 57px 0 54px 0;
   background-color: #FFFFFF;
@@ -355,7 +362,7 @@ body.fade-body {
 
 .Menup2-2 {
   width: 100%;
-  height: 1180px;
+  height: 1090px;
   background-color: #F6F6F6;
   top: -32px;
   border-top-left-radius: 30px;
@@ -403,7 +410,7 @@ body.fade-body {
     width: 100% !important;
     max-width: 1055px;
     margin: 0 auto;
-    height: 1180px;
+    height: 1107px;
   }
 }
 .box-restau {
@@ -757,7 +764,7 @@ body.fade-body {
     z-index: 1;
   }
   .main-content-2 {
-    height: 1423px;
+    height: 1350px;
     background-color: #FFFFFF;
     opacity: 0;
     animation: showMain 1s ease forwards;
