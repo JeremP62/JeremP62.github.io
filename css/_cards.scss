@@ -324,7 +324,7 @@
 
       .menu-header {
        display: flex;
-       align-items: baseline;
+       height: 25px;
        gap: 5px;
       } 
 
@@ -448,4 +448,14 @@
   animation-delay: 4s;
 }
 
-     
+.h1-p3 {
+    margin: 0 !important;
+    width: 100%;
+    max-width: 290px;
+    height: 27px;
+    display: flex;
+    font-family: "Shrikhand";
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1;
+}   
